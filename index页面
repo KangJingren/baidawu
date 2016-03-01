@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<!--IE浏览器用最新的渲染模式-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edg,chrome=1"/>
+	<!--强制让页面宽度适应设备的宽，且不允许用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>首页——酒店预订</title>
+	<link rel="stylesheet" href="css/calendars.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="page1">
+			<div class="banner">
+				<ul id="pic">
+					<li id="img"><img src="img/ban.jpg" alt="" /></li>
+					<li><img src="img/ban.jpg" alt="" /></li>
+					<li><img src="img/ban.jpg" alt="" /></li>
+				</ul>
+				<ol id="dot">
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<h3>酒店预订</h3>
+			</div>
+			<section class="con1">
+				<ul>
+					<li>
+						<div>
+							<label for="">入住地</label>
+							<span class="curCity" id="curCity_name"></span>
+							<input type="hidden" id="curCity_id"/>
+							<a href="html/page2.html"><img src="img/right_arrow.png"></a>
+						</div>
+						<a href="#" class="address"><img src="img/icon_address2.png" alt="" /><br />我的位置</a>
+					</li>
+					<li>
+						<label for="">入住日</label>
+						<input type="text" value="" id="date_in" readonly="readonly">
+						<em><img src="img/right_arrow.png"></em>
+					</li>
+					<li>
+						<label for="">住几晚</label>
+						<input type="text" value="" id="date_out" readonly="readonly"/>
+						<em><img src="img/right_arrow.png"></em>
+					</li>
+					<li>
+						<label for="">酒店名</label>
+						<input type="text" id="hotelName" placeholder="酒店名称（选填）"/>
+					</li>
+				</ul>
+			</section>
+			<footer class="footer1">
+				<div class="searchHotel">
+					<p>
+						<span><img src="img/icon-search.png" alt="" /></span>
+						<a href="" id="searchHotel">搜索酒店</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+	<script src="js/zepto.js"></script>
+	<script src="gmu/js/gmu.js"></script>
+	<script src="gmu/js/event.js"></script>
+	<script src="gmu/js/parseTpl.js"></script>
+	<script src="gmu/js/touch.js"></script>
+	<script src="gmu/js/widget.js"></script>
+	<script src="gmu/js/highlight.js"></script>
+	<script src="gmu/js/calendar.js"></script>
+	<script src="gmu/js/$picker.js"></script>
+	<script src="gmu/js/matchMedia.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		index.homePage();
+	</script>
+</body>
+</html>
